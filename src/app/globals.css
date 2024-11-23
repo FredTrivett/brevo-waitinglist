@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #171717;
+  --background: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #171717;
+    --background: #fafafa;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-afacad), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-zain), sans-serif;
+}
+
+/* Ensure all other text uses Afacad */
+p, span, div, button, input, textarea, select {
+  font-family: var(--font-afacad), sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-custom border border-slate-900/20 bg-primary-gradient flex min-h-12 px-8 py-3 justify-center items-center gap-2 text-neutral-50;
+  }
+  
+  .btn-primary:disabled {
+    @apply bg-none bg-neutral-300 text-neutral-500 cursor-not-allowed;
+  }
+
+  .title-gradient {
+    @apply text-3xl font-bold bg-clip-text text-transparent bg-primary-gradient;
+  }
+
+  .bg-primary-gradient {
+    @apply transition-opacity duration-200;
+  }
+}
