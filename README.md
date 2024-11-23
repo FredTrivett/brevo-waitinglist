@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) that is a waiting list app that is connected to the brevo api. It collects Name, email and answers to a couple questions adds it all in Brevo where you can then add an automation to send an email to new potential leads.
+
+This next js app is created by Fred Trivett and is hosted at [Early Grovy](https://early.growvy.app/)
+
+Growvy is a side project I am working on that is going to be a platform to learn business.
 
 ## Getting Started
 
@@ -6,19 +10,10 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Add BREVO_API_KEY to .env file
 
 ## Learn More
 
